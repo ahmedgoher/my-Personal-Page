@@ -50,7 +50,7 @@
         >
           <div class="d-flex gap-3 align-items-center">
             <a
-              href="https://drive.google.com/file/d/19t3Jet3uP83zJ0T4osjfUhPNUa_H0Emd/view?usp=sharing"
+              href="https://drive.google.com/file/d/16OyisDD5JYoKE_PuVJsZZ_neLlKoQm8R/view?usp=drive_link"
               class="text-dark"
               target="_blank"
               ><i class="fa-solid fa-file-lines fs-3"></i
@@ -69,7 +69,7 @@
             ></a>
             <!-- Dark Mode Button -->
             <button id="darkModeBtn" class="btn btn-outline-primary ms-3">
-              Dark Mode
+              <i class="fa-solid fa-moon"></i>
             </button>
           </div>
         </div>
@@ -106,18 +106,27 @@
         />
       </div>
     </div>
+
+    <!-- PROJECTS SECTION -->
     <div class="bg-light py-3">
       <div class="container">
         <div class="projects">
           <h2 class="text-primary fw-bold mb-3">Projects</h2>
+
+          <!-- Project 1 -->
           <div class="card shadow-sm border-0 mb-4">
+            <img
+              src="img/project1.png"
+              class="card-img-top"
+              alt="Project 1 Screenshot"
+            />
             <div class="card-body">
               <h4 class="card-title">Responsive Personal Website</h4>
               <p class="card-text text-secondary">
-                A fully responsive personal website template built with HTML,
-                CSS, and JavaScript. It features modern sections such as
-                articles, gallery, services, testimonials, and team members,
-                designed to present content in a clean and professional way.
+                A fully responsive personal website template built only with
+                HTML and CSS. It features modern sections such as articles,
+                gallery, services, testimonials, and team members, designed to
+                present content in a clean and professional way.
               </p>
               <a
                 href="https://creative-malabi-055e43.netlify.app/"
@@ -127,9 +136,33 @@
               >
             </div>
           </div>
+
+          <!-- Project 2 -->
+          <div class="card shadow-sm border-0 mb-4">
+            <img
+              src="img/project2.png"
+              class="card-img-top"
+              alt="Project 2 Screenshot"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Modern Landing Page</h4>
+              <p class="card-text text-secondary">
+                A clean and responsive landing page built only with HTML and
+                CSS. Designed with a modern layout to showcase services and
+                call-to-action sections in a simple yet professional style.
+              </p>
+              <a
+                href="https://dazzling-lebkuchen-91b72e.netlify.app/"
+                target="_blank"
+                class="btn btn-primary"
+                >View Project</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
     <!-- EXPERIENCE -->
     <div class="bg-light py-3">
       <div class="container">
@@ -150,6 +183,7 @@
         </div>
       </div>
     </div>
+
     <!-- EDUCATION -->
     <div class="bg-light py-3">
       <div class="container">
@@ -172,6 +206,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Skills Section -->
     <div class="bg-light py-4">
       <div class="container">
         <div class="skills d-md-flex">
@@ -209,13 +245,7 @@
         </div>
       </div>
     </div>
-    <!-- <div class="bg-light py-4">
-       <div class="container">
-        <div class="projects">
 
-        </div>
-       </div>
-    </div> -->
     <!-- Contact -->
     <div class="bg-light py-4">
       <div class="container">
@@ -242,9 +272,45 @@
               <span class="text-dark">Menouf, Al Minufiyah, Egypt</span>
             </p>
           </div>
+
+          <!-- Download CV Button -->
+          <a
+            href="cv/Ahmed_Goher_CV.pdf"
+            class="btn btn-success btn-lg mt-3"
+            download
+          >
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
         </div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-3">
+      <div class="container text-center">
+        <p class="m-0">
+          © <span id="year"></span> Ahmed Goher. All rights reserved.
+        </p>
+        <div class="mt-2">
+          <a
+            href="https://www.linkedin.com/in/ahmedgoher/"
+            target="_blank"
+            class="text-light me-3"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/ahmedgoher"
+            target="_blank"
+            class="text-light me-3"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="mailto:ahmedgoher2190@gmail.com" class="text-light"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
     <!-- Scripts -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
