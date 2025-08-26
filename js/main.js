@@ -1,5 +1,6 @@
 // Dark Mode Button
 const darkBtn = document.getElementById("darkModeBtn");
+let scrollToTop = document.getElementById("toTop");
 const body = document.body;
 const themeKey = "theme";
 const darkTheme = "dark-mode";
@@ -14,6 +15,19 @@ if (currentTheme === darkTheme) {
   body.classList.remove(darkTheme);
   darkBtn.innerHTML = '<i class="fa-solid fa-moon"></i>'; // Dark Mode Icon
 }
+scrollToTop.addEventListener("click", () => {
+  scroll({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+window.onscroll = function () {
+  if (scrollY >= 600) {
+    scrollToTop.style.display = "block";
+  } else {
+    scrollToTop.style.display = "none";
+  }
+};
 
 // Toggle theme on button click
 darkBtn.addEventListener("click", () => {

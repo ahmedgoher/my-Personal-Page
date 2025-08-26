@@ -81,7 +81,24 @@ body {
 #darkModeBtn {
   transition: all 0.3s ease-in-out;
 }
-
+.toTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+.hide {
+  display: none;
+}
+#toTop:hover {
+  background-color: #0a58ca; /* لون أغمق عند الهوفر */
+  transform: scale(1.1);
+}
 .experience {
   max-width: 800px;
   margin-left: 0;
