@@ -107,3 +107,14 @@ body {
     margin-top: 50px;
   }
 }
+.btns {
+  bottom: 10px;
+  left: 320px;
+}
+.navbar-light .navbar-toggler .fa-bars {
+  color: #000; /* فاتح */
+}
+.navbar-dark .navbar-toggler .fa-bars {
+  color: #fff; /* داكن */
+  border-color: #eee;
+}
