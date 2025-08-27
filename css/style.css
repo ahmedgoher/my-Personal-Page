@@ -106,11 +106,21 @@ body {
   .lista {
     margin-top: 50px;
   }
-}
+} /* الوضع العادي (شاشات كبيرة) */
 .btns {
+  position: absolute;
   bottom: 10px;
   left: 320px;
 }
+
+/* في الموبايل (أقل من 768px) الغي البوزيشن */
+@media (max-width: 767px) {
+  .btns {
+    position: static; /* يبقى في مكانه الطبيعي */
+    margin-top: 15px; /* مسافة بسيطة تحت الكونتاكت */
+  }
+}
+
 .navbar-light .navbar-toggler .fa-bars {
   color: #000; /* فاتح */
 }
