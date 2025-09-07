@@ -21,6 +21,8 @@ body {
   height: 250px;
   object-fit: cover;
   border-radius: 50%;
+  transition: opacity 0.5s ease-in-out; /* ✅ يعمل انيميشن */
+  opacity: 1;
 }
 .MYphotoedu {
   width: 250px;
