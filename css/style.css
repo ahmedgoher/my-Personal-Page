@@ -22,7 +22,13 @@ body {
   object-fit: cover;
   border-radius: 50%;
 }
-
+.MYphotoedu {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: auto;
+}
 .aboutMe .about {
   max-width: 800px;
 }
@@ -133,11 +139,16 @@ body {
     position: static; /* يبقى في مكانه الطبيعي */
     margin-top: 15px; /* مسافة بسيطة تحت الكونتاكت */
   }
-  .Contact .text {
-    margin-left: 10px;
+}
+@media (max-width: 992px) {
+  .MYphotoedu {
+    width: auto;
+    /* height: auto; */
+    /* object-fit: cover; */
+    border-radius: 50%;
+    margin: auto;
   }
 }
-
 .navbar-light .navbar-toggler .fa-bars {
   color: #000; /* فاتح */
 }
