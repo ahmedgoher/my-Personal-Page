@@ -108,9 +108,23 @@ body {
   }
 } /* الوضع العادي (شاشات كبيرة) */
 .btns {
-  position: absolute;
-  bottom: 10px;
-  left: 320px;
+  /* position: absolute; */
+  /* bottom: 10px; */
+  /* left: 390px; */
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.list {
+  margin-left: 20px;
+  /* margin-bottom: 10px; */
+}
+.list li {
+  margin-bottom: 10px;
+}
+.Contact .text {
+  margin-left: 20px;
 }
 
 /* في الموبايل (أقل من 768px) الغي البوزيشن */
@@ -118,6 +132,9 @@ body {
   .btns {
     position: static; /* يبقى في مكانه الطبيعي */
     margin-top: 15px; /* مسافة بسيطة تحت الكونتاكت */
+  }
+  .Contact .text {
+    margin-left: 10px;
   }
 }
 
