@@ -11,8 +11,8 @@ const DARK_THEME = "dark-mode";
 const LIGHT_THEME = "light";
 
 // Image paths
-const LIGHT_IMAGE = "img/Picsart_25-02-16_21-36-35-726.jpg";
-const DARK_IMAGE = "img/Linked In.png";
+const LIGHT_IMAGE = "img/Linked In.png";
+const DARK_IMAGE = "img/Picsart_25-02-16_21-36-35-726.jpg";
 
 // ===== UTILITY FUNCTIONS =====
 
