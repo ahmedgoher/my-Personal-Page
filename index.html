@@ -2,360 +2,738 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- <meta name="color-scheme" content="dark" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ahmed Goher</title>
     <link rel="icon" type="image/png" href="img/antigua-and-barbuda.png" />
     <!-- CSS -->
-    <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body class="bg-light">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
-        <!-- Logo -->
-        <div class="logos">
-          <a href="#" class="navbar-brand fs-2 fw-bold text-primary">
-            Ahmed Goher
-          </a>
-          <p class="text-secondary fs-6 m-0">Software Engineer</p>
-        </div>
+        <a class="navbar-brand" href="#home">
+          <span class="brand-text">Ahmed Goher</span>
+          <small class="brand-subtitle">Software Engineer</small>
+        </a>
 
-        <!-- Hamburger -->
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarIcons"
-          aria-controls="navbarIcons"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-target="#navbarNav"
         >
-          <i class="fa-solid fa-bars text-dark"></i>
+          <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Icons + Dark Mode Button -->
-        <div
-          class="collapse navbar-collapse justify-content-end align-items-center"
-          id="navbarIcons"
-        >
-          <div class="d-flex gap-3 align-items-center">
-            <a
-              href="https://drive.google.com/file/d/16OyisDD5JYoKE_PuVJsZZ_neLlKoQm8R/view?usp=drive_link"
-              class="text-dark"
-              target="_blank"
-              ><i class="fa-solid fa-file-lines fs-3"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/ahmedgoher/"
-              class="text-dark _blank"
-              target="_blank"
-              ><i class="fa-brands fa-linkedin fs-3"></i
-            ></a>
-            <a
-              href="https://github.com/ahmedgoher"
-              class="text-dark"
-              target="_blank"
-              ><i class="fa-brands fa-github fs-3"></i
-            ></a>
-            <!-- Dark Mode Button -->
-            <button id="darkModeBtn" class="btn btn-outline-primary ms-3">
-              <i class="fa-solid fa-moon"></i>
-            </button>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <div class="social-links">
+                <a
+                  href="https://www.linkedin.com/in/ahmedgoher/"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://github.com/ahmedgoher"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="cv/Ahmed_Goher_CV.pdf"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fas fa-file-alt"></i>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <button id="darkModeBtn" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-background">
+        <div class="hero-particles"></div>
+      </div>
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <div class="hero-content">
+              <div class="hero-badge">
+                <i class="fas fa-code"></i>
+                <span>Full Stack Developer</span>
+              </div>
+              <h1 class="hero-title">
+                Hi, I'm <span class="text-gradient">Ahmed Goher</span>
+              </h1>
+              <p class="hero-description">
+                Passionate .NET Developer crafting scalable web applications
+                with clean code and modern technologies. Turning ideas into
+                digital solutions that make a difference.
+              </p>
+              <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary btn-lg">
+                  <i class="fas fa-rocket"></i>
+                  View My Work
+                </a>
+                <a href="#contact" class="btn btn-outline-primary btn-lg">
+                  <i class="fas fa-envelope"></i>
+                  Get In Touch
+                </a>
+              </div>
+              <div class="hero-stats">
+                <!-- <div class="stat-item">
+                   <span class="stat-number">2+</span>
+                  <span class="stat-label">Years Experience</span>
+                </div> -->
+                <div class="stat-item">
+                  <span class="stat-number">10+</span>
+                  <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">5+</span>
+                  <span class="stat-label">Technologies</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2">
+            <div class="hero-image">
+              <div class="image-container">
+                <img
+                  id="MYphoto"
+                  src="img/Untitled-1.gif"
+                  alt="Ahmed Goher"
+                  class="profile-image"
+                />
+                <div class="image-decoration"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </section>
+
     <!-- About Section -->
-    <div class="aboutMe bg-light py-5">
-      <div
-        class="container d-flex flex-column-reverse flex-lg-row justify-content-between align-items-center gap-4"
-      >
-        <!-- Text -->
-        <div class="about text-secondary">
-          <h2 class="text-primary fw-bold mb-3">About</h2>
-          <p>
-            I'm a passionate Full Stack .NET Developer with a love for solving
-            real-world problems through clean, scalable web applications. With
-            strong skills in ASP.NET MVC, C#, HTML, CSS, and JavaScript, I enjoy
-            building platforms that make life easier . As a Computer Science and
-            Pure Math student at Minufiya University, I bring both logical
-            thinking and technical ability to every project I work on. I’m
-            always excited to learn something new, collaborate with likeminded
-            people, and turn ideas into working solutions. Outside of coding, I
-            value consistency, simplicity, and doing work that makes a real
-            difference
-          </p>
-        </div>
-
-        <!-- Photo -->
-        <img
-          class="MYphoto img-fluid rounded-circle shadow"
-          src="img/Untitled-1.gif"
-          alt="MYphoto"
-          id="MYphoto"
-        />
-      </div>
-    </div>
-
-    <!-- PROJECTS SECTION -->
-    <div class="bg-light py-3">
+    <section id="about" class="about-section">
       <div class="container">
-        <div class="projects">
-          <h2 class="text-primary fw-bold mb-3">Projects</h2>
-
-          <!-- Project 1 -->
-          <div class="card shadow-sm border-0 mb-4">
-            <img
-              src="img/project1.png"
-              class="card-img-top"
-              alt="Project 1 Screenshot"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Responsive Personal Website</h4>
-              <p class="card-text text-secondary">
-                A fully responsive personal website template built only with
-                HTML and CSS. It features modern sections such as articles,
-                gallery, services, testimonials, and team members, designed to
-                present content in a clean and professional way.
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-header text-center">
+              <span class="section-badge">Get to know me</span>
+              <h2 class="section-title">About Me</h2>
+              <p class="section-subtitle">
+                Passionate developer with a love for creating innovative
+                solutions
               </p>
-              <div class="d-flex gap-2">
-                <a
-                  href="https://seconedprojgoher.netlify.app"
-                  target="_blank"
-                  class="btn btn-primary"
-                >
-                  <i class="fa-solid fa-globe"></i> Live Demo
-                </a>
-                <a
-                  href="https://github.com/ahmedgoher/Project_Two_GoherPage"
-                  target="_blank"
-                  class="btn btn-dark"
-                >
-                  <i class="fa-brands fa-github"></i> GitHub
-                </a>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <div class="about-content">
+              <p class="about-text">
+                I'm a passionate Full Stack .NET Developer with a love for
+                solving real-world problems through clean, scalable web
+                applications. With strong skills in ASP.NET MVC, C#, HTML, CSS,
+                and JavaScript, I enjoy building platforms that make life
+                easier.
+              </p>
+              <p class="about-text">
+                As a Computer Science and Pure Math student at Minufiya
+                University, I bring both logical thinking and technical ability
+                to every project I work on. I'm always excited to learn
+                something new, collaborate with likeminded people, and turn
+                ideas into working solutions.
+              </p>
+              <p class="about-text">
+                Outside of coding, I value consistency, simplicity, and doing
+                work that makes a real difference. I believe in continuous
+                learning and staying updated with the latest technologies and
+                best practices.
+              </p>
+              <div class="about-highlights">
+                <div class="highlight-item">
+                  <i class="fas fa-graduation-cap"></i>
+                  <div>
+                    <h5>Education</h5>
+                    <p>
+                      Computer Science & Mathematics<br />Menoufia University
+                    </p>
+                  </div>
+                </div>
+                <div class="highlight-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div>
+                    <h5>Location</h5>
+                    <p>Menouf, Al Minufiyah<br />Egypt</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- Project 2 -->
-          <div class="card shadow-sm border-0 mb-4">
-            <img
-              src="img/project2.png"
-              class="card-img-top"
-              alt="Project 2 Screenshot"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Modern Landing Page</h4>
-              <p class="card-text text-secondary">
-                A clean and responsive landing page built only with HTML and
-                CSS. Designed with a modern layout to showcase services and
-                call-to-action sections in a simple yet professional style.
-              </p>
-              <div class="d-flex gap-2">
-                <a
-                  href="https://firstprojectl.netlify.app/"
-                  target="_blank"
-                  class="btn btn-primary"
-                >
-                  <i class="fa-solid fa-globe"></i> Live Demo
-                </a>
-                <a
-                  href="https://github.com/ahmedgoher/myFirstproject.git"
-                  target="_blank"
-                  class="btn btn-dark"
-                >
-                  <i class="fa-brands fa-github"></i> GitHub
-                </a>
-              </div>
+          <div class="col-lg-4">
+            <div class="about-image">
+              <img
+                src="img/527618255_1422980935581653_642946219338891938_n.jpg"
+                alt="Education"
+                class="img-fluid rounded-3"
+              />
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- EXPERIENCE -->
-    <div class="bg-light py-3">
-      <div class="container">
-        <div class="experience">
-          <h2 class="text-primary fw-bold mb-3">EXPERIENCE</h2>
-          <h4>
-            NET Trainee – DEPI Scholarship Jun 2025 – Dec 2025 Menouf, Al
-            Minufiyah
-          </h4>
-          <p class="text-secondary">
-            Currently enrolled in the DEPI training program to develop advanced
-            skills in software development using the .NET stack. Studying
-            technologies like ASP.NET MVC, Entity Framework, SQL Server, and
-            applying them in real-world projects. Gaining hands-on experience
-            with clean architecture, database design, and building full-stack
-            web applications.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- EDUCATION -->
-    <div class="bg-light py-3">
-      <div class="container">
-        <div
-          class="Education d-flex flex-column flex-lg-row justify-content-between gap-4"
-        >
-          <div class="text">
-            <h2 class="text-primary fw-bold mb-3">Education</h2>
-            <h4>
-              Bachelor’s in Computer Science / Mathematics Faculty of Science,
-              Menoufia University
-            </h4>
-            <p>Grade: Very Good (2023 – 2027)</p>
-          </div>
-          <img
-            class="MYphotoedu img-fluid rounded shadow"
-            src="img/527618255_1422980935581653_642946219338891938_n.jpg"
-            alt="MYphoto"
-          />
-        </div>
-      </div>
-    </div>
+    </section>
 
     <!-- Skills Section -->
-    <div class="bg-light py-5">
+    <section id="skills" class="skills-section">
       <div class="container">
-        <h2 class="text-primary fw-bold mb-4">Skills</h2>
         <div class="row">
-          <!-- Technical Skills -->
-          <div class="col-md-6">
-            <h4 class="text-secondary mb-3 ps-2">Technical Skills</h4>
-            <ul class="list-unstyled list">
-              <li>
-                <i class="fa-solid fa-code text-primary"></i> C#, ASP.NET Core,
-                Entity Framework
-              </li>
-              <li>
-                <i class="fa-solid fa-database text-primary"></i> SQL Server,
-                LINQ
-              </li>
-              <li>
-                <i class="fa-brands fa-js text-warning"></i> JavaScript, HTML5,
-                CSS3, Bootstrap
-              </li>
-              <li>
-                <i class="fa-solid fa-code-branch text-success"></i> REST APIs,
-                Git, GitHub
-              </li>
-              <li>
-                <i class="fa-solid fa-laptop-code text-info"></i> Visual Studio,
-                VS Code
-              </li>
-            </ul>
-          </div>
-
-          <!-- Soft Skills -->
-          <div class="col-md-6">
-            <h4 class="text-secondary mb-3 ps-2">Soft Skills</h4>
-            <ul class="list-unstyled list">
-              <li>
-                <i class="fa-solid fa-people-group text-primary"></i> Teamwork
-              </li>
-              <li>
-                <i class="fa-solid fa-lightbulb text-warning"></i> Emotional
-                Intelligence
-              </li>
-              <li>
-                <i class="fa-solid fa-clock text-success"></i> Time Management
-              </li>
-              <li>
-                <i class="fa-solid fa-book-open text-info"></i> Self-Learning
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Contact -->
-    <div class="bg-light py-4">
-      <div class="container">
-        <div
-          class="flex-column flex-md-row justify-content-between align-items-start position-relative"
-        >
-          <!-- Contact Info -->
-          <div class="Contact tex mb-3 mb-md-0">
-            <h3 class="text-primary fw-bold mb-3">Contact</h3>
-            <div class="text text-secondary">
-              <p>Phone : <span class="text-dark">+201068045341</span></p>
-              <p>
-                Email :
-                <a class="text-dark" href="mailto:ahmedgoher2190@gmail.com"
-                  >ahmedgoher2190@gmail.com</a
-                >
-              </p>
-              <p>
-                Address :
-                <span class="text-dark">Menouf, Al Minufiyah, Egypt</span>
+          <div class="col-lg-12">
+            <div class="section-header text-center">
+              <span class="section-badge">My expertise</span>
+              <h2 class="section-title">Skills & Technologies</h2>
+              <p class="section-subtitle">
+                Technologies I work with to bring ideas to life
               </p>
             </div>
           </div>
-
-          <!-- Download CV Button -->
-          <div class="btns flex-column flex-sm-row">
-            <a
-              href="cv/Ahmed_Goher_CV.pdf"
-              class="btn btn-outline-secondary btn-lg mt-2 mt-md-3"
-              download
-            >
-              <i class="fa-solid fa-download"></i> Download CV
-            </a>
-            <a
-              class="btn btn-outline-secondary btn-lg mt-2 mt-md-3"
-              href="https://wa.me/201068045341"
-              target="_blank"
-              ><i class="fa-brands fa-whatsapp"></i>Whats app</a
-            >
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="skills-category">
+              <h4 class="skills-category-title">
+                <i class="fas fa-code"></i>
+                Technical Skills
+              </h4>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">C# & ASP.NET Core</span>
+                    <span class="skill-level">90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">JavaScript & HTML/CSS</span>
+                    <span class="skill-level">85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name"
+                      >SQL Server & Entity Framework</span
+                    >
+                    <span class="skill-level">80%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Git & GitHub</span>
+                    <span class="skill-level">85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="skills-category">
+              <h4 class="skills-category-title">
+                <i class="fas fa-users"></i>
+                Soft Skills
+              </h4>
+              <div class="soft-skills">
+                <div class="soft-skill-item">
+                  <i class="fas fa-people-group"></i>
+                  <span>Teamwork</span>
+                </div>
+                <div class="soft-skill-item">
+                  <i class="fas fa-lightbulb"></i>
+                  <span>Problem Solving</span>
+                </div>
+                <div class="soft-skill-item">
+                  <i class="fas fa-clock"></i>
+                  <span>Time Management</span>
+                </div>
+                <div class="soft-skill-item">
+                  <i class="fas fa-book-open"></i>
+                  <span>Self-Learning</span>
+                </div>
+                <div class="soft-skill-item">
+                  <i class="fas fa-comments"></i>
+                  <span>Communication</span>
+                </div>
+                <div class="soft-skill-item">
+                  <i class="fas fa-brain"></i>
+                  <span>Critical Thinking</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- scroll to top -->
-    <button id="toTop" class="toTop btn btn-primary">
-      <i class="fa-solid fa-arrow-up"></i>
-    </button>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-header text-center">
+              <span class="section-badge">My work</span>
+              <h2 class="section-title">Featured Projects</h2>
+              <p class="section-subtitle">
+                A showcase of my recent work and achievements
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="img/project1.png"
+                  alt="Responsive Personal Website"
+                  class="img-fluid"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://seconedprojgoher.netlify.app"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a
+                      href="https://github.com/ahmedgoher/Project_Two_GoherPage"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-category">Web Development</div>
+                <h4 class="project-title">Responsive Personal Website</h4>
+                <p class="project-description">
+                  A fully responsive personal website template built with HTML
+                  and CSS. Features modern sections including articles, gallery,
+                  services, and testimonials with clean, professional design.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">Responsive</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="img/project2.png"
+                  alt="Modern Landing Page"
+                  class="img-fluid"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://firstprojectl.netlify.app/"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a
+                      href="https://github.com/ahmedgoher/myFirstproject.git"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-category">Landing Page</div>
+                <h4 class="project-title">Modern Landing Page</h4>
+                <p class="project-description">
+                  A clean and responsive landing page with modern layout design.
+                  Showcases services and call-to-action sections in a simple yet
+                  professional style.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">Modern Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-header text-center">
+              <span class="section-badge">What I offer</span>
+              <h2 class="section-title">My Services</h2>
+              <p class="section-subtitle">
+                Comprehensive solutions for your digital needs
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h4 class="service-title">Web Development</h4>
+              <p class="service-description">
+                Building responsive and modern websites using HTML, CSS,
+                JavaScript, and C#. Creating scalable web applications with
+                clean architecture.
+              </p>
+              <div class="service-features">
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Responsive Design</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Modern Technologies</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Clean Code</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-paintbrush"></i>
+              </div>
+              <h4 class="service-title">UI/UX Design</h4>
+              <p class="service-description">
+                Designing clean and user-friendly interfaces that enhance user
+                experience. Creating intuitive designs that convert visitors
+                into customers.
+              </p>
+              <div class="service-features">
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>User-Centered Design</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Wireframing</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Prototyping</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h4 class="service-title">Database Management</h4>
+              <p class="service-description">
+                Creating and managing SQL databases with secure and optimized
+                performance. Designing efficient database schemas and
+                implementing best practices.
+              </p>
+              <div class="service-features">
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>SQL Server</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Entity Framework</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Performance Optimization</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-header text-center">
+              <span class="section-badge">My journey</span>
+              <h2 class="section-title">Experience & Education</h2>
+              <p class="section-subtitle">
+                My professional journey and academic background
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-marker">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-date">Jun 2025 – Dec 2025</div>
+                  <h4 class="timeline-title">
+                    .NET Trainee – DEPI Scholarship
+                  </h4>
+                  <div class="timeline-location">Menouf, Al Minufiyah</div>
+                  <p class="timeline-description">
+                    Currently enrolled in the DEPI training program to develop
+                    advanced skills in software development using the .NET
+                    stack. Studying technologies like ASP.NET MVC, Entity
+                    Framework, SQL Server, and applying them in real-world
+                    projects. Gaining hands-on experience with clean
+                    architecture, database design, and building full-stack web
+                    applications.
+                  </p>
+                  <div class="timeline-skills">
+                    <span class="skill-badge">ASP.NET MVC</span>
+                    <span class="skill-badge">Entity Framework</span>
+                    <span class="skill-badge">SQL Server</span>
+                    <span class="skill-badge">Clean Architecture</span>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-marker">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-date">2023 – 2027</div>
+                  <h4 class="timeline-title">
+                    Bachelor's in Computer Science / Mathematics
+                  </h4>
+                  <div class="timeline-location">
+                    Faculty of Science, Menoufia University
+                  </div>
+                  <p class="timeline-description">
+                    Pursuing a Bachelor's degree in Computer Science and Pure
+                    Mathematics. Developing strong analytical and
+                    problem-solving skills through rigorous coursework in
+                    algorithms, data structures, mathematical modeling, and
+                    software engineering principles.
+                  </p>
+                  <div class="timeline-grade">
+                    <span class="grade-label">Current Grade:</span>
+                    <span class="grade-value">Very Good</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-header text-center">
+              <span class="section-badge">Get in touch</span>
+              <h2 class="section-title">Let's Work Together</h2>
+              <p class="section-subtitle">
+                Ready to start your next project? Let's discuss how I can help
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="contact-content">
+              <div class="row">
+                <div class="col-md-4 mb-4">
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <h5>Phone</h5>
+                    <p>+201068045341</p>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <h5>Email</h5>
+                    <p>agoher190@gmail.com</p>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h5>Location</h5>
+                    <p>Menouf, Al Minufiyah, Egypt</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-actions">
+                <a
+                  href="cv/Ahmed_Goher_CV.pdf"
+                  class="btn btn-primary btn-lg"
+                  download
+                >
+                  <i class="fas fa-download"></i>
+                  Download CV
+                </a>
+                <a
+                  href="https://wa.me/201068045341"
+                  class="btn btn-outline-primary btn-lg"
+                  target="_blank"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  WhatsApp
+                </a>
+                <a
+                  href="mailto:ahmedgoher2190@gmail.com"
+                  class="btn btn-outline-primary btn-lg"
+                >
+                  <i class="fas fa-envelope"></i>
+                  Send Email
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="bg-dark text-light py-3">
-      <div class="container text-center">
-        <p class="m-0">
-          © <span id="year"></span> Ahmed Goher. All rights reserved.
-        </p>
-        <div class="mt-2">
-          <a
-            href="https://www.linkedin.com/in/ahmedgoher/"
-            target="_blank"
-            class="text-light me-3"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a
-            href="https://github.com/ahmedgoher"
-            target="_blank"
-            class="text-light me-3"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a href="mailto:ahmedgoher2190@gmail.com" class="text-light"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer-content">
+              <div class="footer-brand">
+                <h4>Ahmed Goher</h4>
+                <p>Full Stack .NET Developer</p>
+              </div>
+              <div class="footer-links">
+                <a
+                  href="https://www.linkedin.com/in/ahmedgoher/"
+                  target="_blank"
+                  class="footer-link"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://github.com/ahmedgoher"
+                  target="_blank"
+                  class="footer-link"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:ahmedgoher2190@gmail.com" class="footer-link">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+              <div class="footer-copyright">
+                <p>
+                  &copy; <span id="year"></span> Ahmed Goher. All rights
+                  reserved.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
 
+    <!-- Scroll to Top Button -->
+    <button id="toTop" class="scroll-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
     <!-- Scripts -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
